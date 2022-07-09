@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:food_delivery/utils/colors.dart';
 import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/app_icon.dart';
@@ -96,39 +95,42 @@ class RecomenedFoodDetail extends StatelessWidget {
             ),
           ),
           // this is copy
-           Container(
-        height: Dimensions.height120,
-        padding: EdgeInsets.symmetric(
-            horizontal: Dimensions.width20, vertical: Dimensions.height20),
-        decoration: BoxDecoration(
-          color: AppColors.buttonBackgroundColor,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(Dimensions.radius20),
-              topRight: Radius.circular(Dimensions.radius20)),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              padding: EdgeInsets.all(Dimensions.width20),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(Dimensions.radius15),
-                  color: Colors.white),
-              child: Icon(Icons.favorite, color: AppColors.mainColor,),
+          Container(
+            height: Dimensions.height120,
+            padding: EdgeInsets.symmetric(
+                horizontal: Dimensions.width20, vertical: Dimensions.height20),
+            decoration: BoxDecoration(
+              color: AppColors.buttonBackgroundColor,
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(Dimensions.radius20),
+                  topRight: Radius.circular(Dimensions.radius20)),
             ),
-            Container(
-              padding: EdgeInsets.all(Dimensions.width20),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(Dimensions.radius15),
-                  color: AppColors.mainColor),
-              child: BigText(
-                text: '\$10 | Add to cart',
-                color: Colors.white,
-              ),
-            )
-          ],
-        ),
-      ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(Dimensions.width20),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(Dimensions.radius15),
+                      color: Colors.white),
+                  child: Icon(
+                    Icons.favorite,
+                    color: AppColors.mainColor,
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(Dimensions.width20),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(Dimensions.radius15),
+                      color: AppColors.mainColor),
+                  child: BigText(
+                    text: '\$10 | Add to cart',
+                    color: Colors.white,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
