@@ -7,12 +7,12 @@ class BigText extends StatelessWidget {
   double size;
   TextOverflow overflow;
 
-   BigText({
+  BigText({
     Key? key,
-      this.color = const Color(0xFF332d2b),
-      required this.text,
-      this.overflow = TextOverflow.ellipsis,
-      this.size = 0,
+    this.color = const Color(0xFF332d2b),
+    required this.text,
+    this.overflow = TextOverflow.ellipsis,
+    this.size = 0,
   }) : super(key: key);
 
   @override
@@ -22,10 +22,9 @@ class BigText extends StatelessWidget {
       maxLines: 1,
       overflow: overflow,
       style: TextStyle(
-        color: color,
-        fontSize: size==0 ? Dimensions.font20 : size,
-        fontWeight: FontWeight.w400
-      ),
+          color: color,
+          fontSize: size == 0 ? Dimensions.font20 : size,
+          fontWeight: FontWeight.w400),
     );
   }
 }

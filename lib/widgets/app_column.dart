@@ -7,17 +7,17 @@ import 'package:food_delivery/widgets/small_text.dart';
 
 class AppColumn extends StatelessWidget {
   final String text;
-  const AppColumn({
-    Key? key,
-    required this.text
-  });
+  const AppColumn({Key? key, required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        BigText(text: text, size: Dimensions.font26,),
+        BigText(
+          text: text,
+          size: Dimensions.font26,
+        ),
         SizedBox(
           height: Dimensions.height10,
         ),
@@ -28,7 +28,7 @@ class AppColumn extends StatelessWidget {
                 return Icon(
                   Icons.star,
                   color: AppColors.mainColor,
-                  size: 15,
+                  size: Dimensions.icon16,
                 );
               }),
             ),
