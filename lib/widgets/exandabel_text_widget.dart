@@ -24,7 +24,7 @@ class _ExandableTextWidgetState extends State<ExandableTextWidget> {
     if (widget.text.length > textHight) {
       firstHalf = widget.text.substring(0, textHight.toInt());
       secondHalf =
-          widget.text.substring(textHight.toInt()+1, widget.text.length);
+          widget.text.substring(textHight.toInt() + 1, widget.text.length);
     } else {
       firstHalf = widget.text;
       secondHalf = "";
