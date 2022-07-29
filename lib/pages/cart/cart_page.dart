@@ -60,27 +60,6 @@ class CartPage extends StatelessWidget {
                             backgroundColor: AppColors.mainColor,
                             iconSize: Dimensions.icon25,
                           ),
-                          Get.find<PopularProductController>().totalItems >= 1
-                              ? Positioned(
-                                  right: 0,
-                                  child: Icon(
-                                    Icons.circle,
-                                    size: Dimensions.icon20,
-                                    color: Colors.white,
-                                  ))
-                              : Container(),
-                          Get.find<PopularProductController>().totalItems >= 1
-                              ? Positioned(
-                                  right: 2,
-                                  top: 2,
-                                  child: BigText(
-                                    text: Get.find<PopularProductController>()
-                                        .totalItems
-                                        .toString(),
-                                    size: Dimensions.font12,
-                                    color: AppColors.mainColor,
-                                  ))
-                              : Container(),
                         ],
                       );
                     })
@@ -281,6 +260,7 @@ class CartPage extends StatelessWidget {
                 GestureDetector(
                   onTap: (() {
                     //  popularProduct.addItem(product);
+                    cartController.addToHistory();
                   }),
                   child: Container(
                     padding: EdgeInsets.all(Dimensions.width20),

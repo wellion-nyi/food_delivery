@@ -74,13 +74,13 @@ class PopularProductController extends GetxController {
     _cart = cart;
     var exit = false;
     exit = _cart.exitInCart(product);
-    print('exit or not ' + exit.toString());
+    //print('exit or not ' + exit.toString());
     //if exit
     //get from storage inCartItems=3
     if (exit) {
       _inCartItems = _cart.getQuantity(product);
     }
-    print('the quantity in the cart is ' + _inCartItems.toString());
+    //print('the quantity in the cart is ' + _inCartItems.toString());
   }
 
   void addItem(ProductModel product) {
