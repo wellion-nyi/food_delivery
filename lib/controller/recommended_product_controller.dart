@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:food_delivery/data/repository/recommended_product_repo.dart';
 import 'package:food_delivery/model/products_model.dart';
 import 'package:get/get.dart';
@@ -21,7 +23,7 @@ class RecommendedProductController extends GetxController {
       _isLoaded = true;
       update();
     } else {
-      print('Counld not get product recommend');
+      return print('Counld not get product recommend');
     }
   }
 }
