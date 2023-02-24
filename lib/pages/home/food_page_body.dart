@@ -61,7 +61,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             popularProducts.popularProductList[position]);
                       }),
                 )
-              : Center(
+              : const Center(
                   child: CircularProgressIndicator(
                     color: AppColors.mainColor,
                   ),

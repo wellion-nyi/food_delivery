@@ -29,10 +29,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dots_indicator: ^2.1.0
-  get: ^4.6.5
-  shared_preferences: ^2.0.11
-  intl: ^0.17.0
+  dots_indicator:
+  get:
+  shared_preferences:
+  intl:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

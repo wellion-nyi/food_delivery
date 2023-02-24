@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   //late PersistentTabController _controller;
 
   List pages = [
-    MainFoodPage(),
+    const MainFoodPage(),
     Container(
       child: Center(
         child: Text('Next page'),
