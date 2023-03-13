@@ -58,19 +58,20 @@ class PopularFoodDetail extends StatelessWidget {
                         Get.toNamed(RouteHelpaer.getInitial());
                       }
                     },
-                    child: AppIcon(
+                    child:const AppIcon(
                       icon: Icons.arrow_back_ios,
                     ),
                   ),
                   GetBuilder<PopularProductController>(builder: (controller) {
                     return GestureDetector(
                       onTap: (() {
-                        if (controller.totalItems >= 1)
+                        if (controller.totalItems >= 1) {
                           Get.toNamed(RouteHelpaer.getCartPage());
+                        }
                       }),
                       child: Stack(
                         children: [
-                          AppIcon(
+                         const AppIcon(
                             icon: Icons.shopping_cart_outlined,
                           ),
                           controller.totalItems >= 1
@@ -165,7 +166,7 @@ class PopularFoodDetail extends StatelessWidget {
                         onTap: (() {
                           popularProduct.setQuantity(false);
                         }),
-                        child: Icon(
+                        child:const Icon(
                           Icons.remove,
                           color: AppColors.signColor,
                         ),
